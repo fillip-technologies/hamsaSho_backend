@@ -1,0 +1,7 @@
+# This file is only needed if you upload everything into public_html
+# and cannot set the DocumentRoot to the /public subfolder.
+# If your subdomain/domain root is already pointing to /public, delete this file.
+
+RewriteEngine on
+RewriteCond %{REQUEST_URI} !^/public/
+RewriteRule ^(.*)$ /public/$1 [L]

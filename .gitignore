@@ -1,0 +1,102 @@
+# Environment files
+
+.env
+.env.*
+!.env.example
+
+# Laravel framework
+
+/vendor/
+/node_modules/
+
+# Laravel runtime files
+
+/storage/*.key
+/storage/app/*
+!/storage/app/.gitignore
+/storage/framework/*
+!/storage/framework/.gitignore
+/storage/logs/*
+!/storage/logs/.gitignore
+
+# Bootstrap cache
+
+/bootstrap/cache/*
+!/bootstrap/cache/.gitignore
+
+# IDE / Editors
+
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# OS files
+
+*.log
+*.tmp
+*.temp
+
+# Testing / coverage
+
+.phpunit.result.cache
+.phpunit.cache/
+coverage/
+
+# Build files
+
+/public/hot
+/public/storage
+
+# Composer
+
+composer.phar
+
+# npm
+
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+
+# Laravel Sail
+
+docker-compose.override.yml
+
+# Local development
+
+Homestead.yaml
+Homestead.json
+auth.json
+
+# PHPStan / Larastan
+
+.phpstan/
+phpstan.neon
+phpstan.neon.dist
+
+# Pest
+
+.pest/
+
+# VS Code settings
+
+.vscode/
+
+# Laravel Telescope
+
+/storage/telescope/
+
+# SQLite local database
+
+database/database.sqlite
+database/database.sqlite-journal
+
+# Backup files
+
+*.bak
+*.backup
+*.old
+*~
+.DS_Store
