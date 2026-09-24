@@ -6,7 +6,7 @@ use App\Models\Admin;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Hash;
-use Tymon\JWTAuth\Facades\JWTAuth;
+use Illuminate\Support\Str;
 
 class AdminController extends Controller
 {
@@ -27,7 +27,8 @@ class AdminController extends Controller
             ], 401);
         }
 
-        $token = JWTAuth::fromUser($admin);
+        $token = Str::random(80);
+        $admin->update(['api_token' => $token]);
 
         return response()->json([
             'success' => true,
